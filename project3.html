@@ -24,13 +24,15 @@
         display: inline-block;
         /* border: 2px solid red; */
         position: absolute;
-        left: 60px;
+        left: 30px;
+   
         top: 0px;
       
     }
 
     .left img {
-        width: 136px;
+        display: flex;
+        width: 60%;
         filter: invert(100%);
     }
 
@@ -43,7 +45,7 @@
     .mid {
         display: block;
         width: 36%;
-        margin: 29px auto;
+        margin: 29px 30%;
         /* border: 2px solid green; */
     }
 
@@ -51,28 +53,30 @@
         position: absolute;
         right: 34px;
         top: 43px;
+        margin-left: 10%;
         display: inline-block;
         /* border: 2px solid yellow; */
     }
 
-    .navbar {
-        display: inline-block;
+    
+
+    .navbar  {
+        display: inline-flex;
+    font-size: 20px;
+    position: relative;
+    margin-left: 15% !important;
     }
 
-    .navbar li {
-        display: inline-block;
-        font-size: 25px;
-    }
-
-    .navbar li a {
+    .navbar  a {
         color: white;
         text-decoration: none;
-        padding: 34px 23px;
+        margin: 10%;
+        /* padding: 34px 23px; */
 
     }
 
-    .navbar li a:hover,
-    .navbar li a.active {
+    .navbar  a:hover,
+    .navbar  a.active {
         text-decoration:underline;
         color: grey;
 
@@ -101,17 +105,19 @@
 
     .container {
         border: 2px solid white;
-        margin: 150px 80px;
-        padding: 75px;
-        width: 30%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 10%;
+        padding: 50px;
+        width: 50%;
         border-radius: 28px;
     }
 
     .form-group input {
         font-family: 'Baloo Bhai', cursive;
         text-align: center;
-        display: block;
-        width: 508px;
+        display: flex;
+        width: 90%;
         padding: 1px;
         border: 2px solid black;
         margin: 11px auto;
@@ -136,26 +142,26 @@
         <div class="left">
             <img src="12g.jpg" alt="">
         <br><br>
-            <div>Nipun Fitness Club</div>
+            <div>Fitness Club</div>
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
-            <ul class="navbar">
-                <li><a href="#"  >Home</a></li>   
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Fitness Calculator</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul>
+            <div class="navbar">
+                <a href="#"  >Home</a>  
+                <a href="#">About Us</a>
+                <a href="#">Fitness Calculator</a>
+                <a href="#">Contact Us</a>
+            </div>
         </div>
       <!-- class="active" can used to permanent hover the element -->
         <!-- Right box for buttons -->
-        <div class="right">
-            <button class="btn"><a> Call Us Now <br> 9650513361 </a> </button>
+        <!-- <div class="right">
+            <button class="btn"><a> Call Us Now <br> 9650513361 </a> </button><br>
             <button class="btn"><a>Email Us <br> nipunyadav0001@gmail.com </a> </button>
-        </div>
+        </div> -->
     </header>
     <div class="container">
-        <h1>Join the best gym of Delhi now</h1>
+        <h1>Join the Delhi's Best Gym !</h1>
         <form action="noaction.php">
             <div class="form-group">
                 <input type="text" name="" placeholder="Enter your Name">
@@ -181,3 +187,4 @@
 </body>
 
 </html>
+
